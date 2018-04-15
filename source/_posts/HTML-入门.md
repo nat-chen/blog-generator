@@ -25,14 +25,14 @@ tags: HTML
 * `<img>` `<object>` `<video>` `<textarea>` `<input>` `<audio>` `<canvas>` 和通过 CSS content 属性插入的对象（匿名可替换元素）
 
 ## 总结
-* 除了 <div> 和 <span> 外，其他标签都有默认的样式，当然包括 `display: block/inline`.
-* <strong> 与 <bold> 样式一致，但 <strong> 含有较强的语气
-* 大图一般用 `background` 属性，不用 <img>
+* 除了 `<div>` 和 `<span>` 外，其他标签都有默认的样式，当然包括 `display: block/inline`.
+* `<strong>` 与 `<bold>` 样式一致，但 `<strong>` 含有较强的语气
+* 大图一般用 `background` 属性，不用 `<img>`
 * HTML 取标签或是 CSS 命名都应由内容而决定，而非样式
-* <hr> 水平分割符，<br> 为强制换行
-* <dl> = description list，<dt> = description term，<dd> = description definition，<ul> = unordered list，<ol> = ordered list，<li> = list item
+* `<hr>` 水平分割符，`<br>` 为强制换行
+* `<dl>` = description list，`<dt>` = description term，`<dd>` = description definition，`<ul>` = unordered list，`<ol>` = ordered list，`<li>` = list item
 * `whois` 命令为某个域名拥有者的身份
-* <iframe> 标签
+* `<iframe>` 标签
   - 用于在当前页面中嵌入一个页面
   - 它可用拥有一个 name，a 标签的 target 可以通过 name 指向它
   - 现代前端开发中，iframe 很少用
