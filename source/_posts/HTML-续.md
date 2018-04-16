@@ -1,5 +1,5 @@
 ---
-title: HTML 续.md
+title: HTML 续
 date: 2018-04-15 07:52:04
 tags: HTML
 ---
@@ -42,10 +42,12 @@ tags: HTML
 * `download`：指示浏览器下载 URL 而不是导航到 URL，将提示用户将其保存为本地文件。如果属性有个值，它将在保存提示中用作预先填写的文件名。
 * `href`：**必需**，为锚定义一个超文本链接来源，使用 ‘#top’ 或是 “#” 属性值返回到页面顶部。
   - 属性值为 "qq.com", 被当成文件 qq.com
-  - 属性值为 "//qq.com", 默认使用当前页面的协议
+  - 属性值为 "//qq.com，浏览器会根据当前协议，补全无协议链接的协议；如果用 file:// 协议浏览页面，就会访问到 file://qq.com，这是一个不存在的路径；尽量不使用 file:// 协议预览网页，以免无协议链接出错
   - 属性值为 "?name=nat", 发起请求自动加入页面地址尾部
   - 属性值为 "javascript:alert('hi');", JS 伪协议
   - 属性值为 "" 时，将刷新自身页面，最好使用 `href="javascript:;`
+  - 属性值为 "#"时，页面滚到顶部，锚点变为 #
+  - 属性值为 "/.."时，当标签被点击时浏览器发起 GET / HTTP/1.1 的请求
 * `rel`：指定了目标对象到链接对象的关系
 * `target`：指定在何处显示链接的资源：
   - `_self`：当前页面加载
@@ -73,10 +75,13 @@ tags: HTML
 * `name`：**不推荐**，form 名字，HTML5 中一个文档中的多个 form 当中，name 必须唯一而不仅仅是一个空字符串
 * `target`：指示在提交表单之后，在哪里显示收到的回复：`_self`, `_blank`, ` _top`, `_parent` 或是 iframename（指定 frame 中加载），这个值可以被 `button` 或 `input` 元素中 `fromenctype` 属性重载
 
-### 总结笔记
+## 总结笔记
 * 不含 submit 类型按钮将无法提交
+* form 标签里面有个 input type=submit 的元素或是有一个 button 元素，而 type 属性为 空
+* form 标签里面的 input 不加 name 属性时，input 值不会出现在请求里
 * file 协议不支持 post 请求
 * `tfoot/thead/tbody` 页面排序显示与 HTML 排版无关
+* 
 
 ```bash
 npm i -g http-server
