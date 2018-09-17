@@ -81,7 +81,6 @@ tags: HTML
 * form 标签里面的 input 不加 name 属性时，input 值不会出现在请求里
 * file 协议不支持 post 请求
 * `tfoot/thead/tbody` 页面排序显示与 HTML 排版无关
-* 
 
 ```bash
 npm i -g http-server
